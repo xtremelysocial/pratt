@@ -1,0 +1,69 @@
+/*
+Theme Name: Flat Bootstrap Pratt
+Theme URI: http://xtremelysocial.com/wordpress/pratt/
+Description: Flat Bootstrap Pratt by XtremelySocial is an adaptation of the "Pratt" theme by Blacktie.co. It is a modern, fully responsive, "flat" style theme with a nice color palette, big full-width images, and full-width colored sections. The navbar is fixed at the top of the page for easy navigation. For more information go to http://xtremelysocial.com/wordpress/pratt/.
+Author: XtremelySocial and Blacktie
+Author url: http://xtremelysocial.com
+Version: 1.0
+Template: flat-bootstrap
+Template Version: 1.1
+Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, rtl-language-support, theme-options, translation-ready, sticky-post, threaded-comments, light, blue
+*/
+
+/* IMPORT the parent theme's stylesheet(s) */
+@import url("../flat-bootstrap/style.css");
+
+/* OVERRIDDEN styles from the parent theme's stylesheet(s) */
+
+/* Need room for fixed navbar at the top. If you change the height of it, change it 
+ * here as well. Make sure the navbar doesn't wrap on tablets or this won't work 
+ * right.
+ */
+body {
+    padding-top: 50px;
+}
+
+/* Style the footer area to have white text and link underlines instead of the parent
+ * theme's gray text and white links. If you want to revert to the parent theme's style
+ * just comment out this section.
+ */
+.sidebar-footer {
+	color: #fff !important;
+}
+.sidebar-footer a, 
+.sidebar-footer a:hover, 
+.sidebar-footer a:focus {
+	color: #fff !important;
+	text-decoration: underline !important;
+}
+
+/* Add some additional padding around the sections */
+.section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.padding-top {
+	padding-top: 50px;
+}
+.padding-bottom {
+	padding-bottom: 50px;
+}
+.page-posts {
+	padding-bottom: 25px;
+}
+
+/* Reduce the footer heading h2 to match the h3 font size and reduce the size of labels. 
+ * e.g. in a contact form.
+ */
+.sidebar-footer h2 {
+	font-size: 28px;
+	line-height: 30px;
+}
+.sidebar-footer {
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+.sidebar-footer label {
+	font-size: 16px;
+	line-height: 22px;
+}

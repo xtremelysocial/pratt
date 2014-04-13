@@ -26,32 +26,6 @@
 	<?php do_action( 'before' ); ?>
 	
 	<header id="masthead" class="site-header" role="banner"><!-- page-header -->
-		<!-- <div id="site-branding" class="site-branding"> -->
-
-		<?php
-/*
-		// Get custom header image and determine its size
-		if ( get_header_image() ) {
-		?>
-			<div class="custom-header-image" style="background-image: url('<?php echo header_image() ?>'); height: <?php echo get_custom_header()->height ?>px;">
-			<div class="container">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</div></div>
-		<?php
-
-		// If no custom header, then just display the site title and tagline
-		} else {
-		?>
-			<div class="container">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</div>
-		<?php
-		} //endif get_header_image()
-*/		?>			
-
-		<!-- </div> --><!-- .site-branding -->
 
 		<?php // Display the primary nav bar ?>	
 		<nav id="site-navigation" class="main-navigation" role="navigation">

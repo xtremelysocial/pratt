@@ -4,8 +4,8 @@ Contributors: timnicholson
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE
 Requires at least: 3.6.0
-Tested up to: 3.8.1
-Stable tag: 1.0
+Tested up to: 3.8.2
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -27,6 +27,10 @@ For more information go to [http://xtremelysocial.com/wordpress/pratt/].
 
 Flat Bootstrap Pratt WordPress theme, Copyright (C) 2014 XtremelySocial
 Flat Bootstrap Pratt WordPress theme is licensed under the GPL.
+
+Pratt theme design, Copyright (C) 2014 Blacktie.co
+Pratt theme design is licensed under the Creative Commons Attribution 3.0 License
+For more information go to [http://www.blacktie.co/about-themes/]
 
 
 == INSTALLATION ==

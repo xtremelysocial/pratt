@@ -1,9 +1,7 @@
 <?php
 /**
- * Theme: Flat Bootstrap
+ * Theme: Flat Bootstrap Pratt
  * 
- * Template Name: Page - Full Width with Recent Posts
- *
  * Home page for theme. Based on the "Full Width with Recent Posts" page template, but
  * displays a sample home page when previewing the theme and upon initial activation of
  * the theme. 
@@ -26,15 +24,8 @@ get_header(); ?>
 		<?php /* DISPLAY THE SAMPLE HOME PAGE CONTENT FIRST */ ?>
 		<?php //while ( have_posts() ) : the_post(); ?>
 
-			<?php //get_template_part( 'content', 'page-fullwidth' ); ?>
-			<?php //get_sidebar( 'home' ); ?>
 			<div id="sidebar-home" class="sidebar-home">
-			<?php //include ('samples/home.html'); ?>
-			<?php
-			$homepage = file_get_contents( get_stylesheet_directory_uri() . '/samples/home.html' );
-			$homepage = str_ireplace ( '/samples/img/', get_stylesheet_directory_uri() . '/samples/img/', $homepage );
-			echo $homepage;
-			?>
+			<?php include( 'samples/home.html' ); ?>
 			</div><!-- .sidebar-home -->
 
 		<?php //endwhile; // end of the loop. ?>
@@ -54,7 +45,7 @@ get_header(); ?>
 			<div class="container"><div class="row">
 
 			<?php /* Determine # of columns and # of posts per row */
-			$count_posts = count ( $list_of_posts->posts );
+			$count_posts = count ( $list_of_posts->posts ) <= $num_posts ? count ( $list_of_posts->posts ) : $num_posts;
 			if ( $count_posts % 4 == 0 ) $per_row = 4;
 			elseif ( $count_posts % 3 == 0) $per_row = 3;
 			else $per_row = 2;			

@@ -31,16 +31,16 @@
  		image attachment pages
  */
 $theme_options = array(
-/*	'background_color' 		=> 'f2f2f2',
+	'background_color' 		=> 'f2f2f2',
 	'content_width' 		=> 1170,
 	'embed_video_width' 	=> 600,
 	'embed_video_height' 	=> null, // i.e. calculate it automatically
 	'post_formats' 			=> '',
 	'touch_support' 		=> true,
 	'fontawesome' 			=> true,
-	'bootstrap_gradients' 	=> false, */
-	'navbar_classes'		=> 'navbar-default navbar-fixed-top',
-/*	'image_keyboard_nav' 	=> true*/
+	'bootstrap_gradients' 	=> false,
+	'navbar_classes'		=> 'navbar-default navbar-fixed-top', // Different than parent
+	'image_keyboard_nav' 	=> true
 );
 
 /*
@@ -90,48 +90,24 @@ function xsbf_pratt_custom_header_args( $args ) {
 		font: 300 41px/45px Raleway, Arial, 'Helvetica Neue', sans-serif;
 		margin: 25px 0 11px;
 	}
-	/*#headimg h1 a {
-		text-decoration: none;
-	}*/
 	#headimg h2 {
 		font: 300 24px/26px Raleway, Arial, 'Helvetica Neue', sans-serif;
 		margin: 10px 0 25px;
 		/*text-shadow: none;*/
 	}
-	/*.default-header img {
-		max-width: 230px;
-		width: auto;
-	}*/
 
 	<?php // If text color not overriden, use white (assume dark background) ?>
 	<?php if ( HEADER_TEXTCOLOR == get_header_textcolor() ) : ?>
-	/*#headimg h1 a {
-		color: #16a085 !important;
-	}
-	#headimg h1 a:hover,
-	#heading h1 a:active,
-	#heading h1 a:focus {
-		color: #19b798 !important;
-	}*/
 	#headimg h1, #headimg h2 {
 		color: white !important;
 	}
 
 	<?php // Otherwise, set the text color to what the user selected ?>
 	<?php else : ?>
-	/*#headimg h1 a {
-		color: <?php get_header_textcolor(); ?> !important;
-	}	
-	#headimg h1 a:hover,
-	#headimg h1 a:active,
-	#headimg h1 a:focus {
-		opacity: 0.75;
-	}*/
 	#headimg h1, #headimg h2 {
 		color: <?php get_header_textcolor(); ?> !important;
 	}	
 	<?php endif; ?>
-
 
 	</style>
 <?php

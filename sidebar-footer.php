@@ -11,38 +11,32 @@
 ?>
 
 <?php 
-/* If footer "sidebar" has widgets, then display them */
+/* If footer "sidebar" has widgets, then retreive them */
 $sidebar_footer = get_dynamic_sidebar( 'Footer' );
+
+/* If not, then display sample widgets, unless turned off in theme options */
+global $theme_options;
+if ( $theme_options['sample_widgets'] != false AND ! $sidebar_footer ) {
+	$sidebar_footer = '<aside id="sample-text" class="widget widget_text col-sm-4 clearfix">'
+		.'<h2 class="widget-title">' . _x( 'Address', null, 'flat-bootstrap' ) . '</h2>'
+		.'<p>' . get_bloginfo( 'name' ) . '<br />'
+		._x( "Av. Greenville 987<br />New York, New York 90873<br />United States", null, 'flat-bootstrap' ) . '</p>'
+		.'<p>' . _x( "Note: This is just a sample footer. Add widgets to change what appears here.", null, 'flat-bootstrap' ) . '</p>'
+		.'</aside>';
+		
+	$sidebar_footer .= '<aside id="sample-text-2" class="widget widget_text col-sm-8 clearfix">'
+		.'<h2 class="widget-title">' . _x( 'Drop Us A Line', null, 'flat-bootstrap' ) . '</h2>'
+		.'<p>' . do_shortcode( "[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]" ) . '</p>'
+		.'</aside>';
+}
+
+/* Apply filters and display the footer widgets */
 if ( $sidebar_footer ) :
 ?>
 	<div class="sidebar-footer clearfix">
 	<div class="container">
 		<div class="row">
 		<?php echo apply_filters( 'xsbf_footer', $sidebar_footer ); ?>
-		</div><!-- .row -->
-	</div><!-- .container -->
-	</div><!-- .sidebar-footer -->
-
-<?php
-/* Otherwise, if user is previewing this theme, then show some examples */
-elseif ( xsbf_theme_preview() ) :
-?>
-	<div class="sidebar-footer clearfix">
-	<div class="container">
-		<div class="row">
-
-			<aside id="sample-text" class="widget widget_text col-sm-4 clearfix">
-				<h2 class="widget-title"><?php _e( 'Address', 'flat-bootstrap' ); ?></h2>
-				<p><?php bloginfo( 'name' ); ?><br />
-				<?php _e( "Av. Greenville 987<br />New York, New York 90873<br />United States", 'flat-bootstrap' ); ?></p>
-				<p><?php _e( "Note: This is just a sample footer for the theme preview.", 'flat-bootstrap' ); ?></p>
-			</aside>
-
-			<aside id="sample-text-2" class="widget widget_text col-sm-8 clearfix">
-				<h2 class="widget-title"><?php _e( 'Drop Us A Line', 'flat-bootstrap' ); ?></h2>
-				<p><?php echo do_shortcode( "[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]" ) ?></p>
-			</aside>
-
 		</div><!-- .row -->
 	</div><!-- .container -->
 	</div><!-- .sidebar-footer -->

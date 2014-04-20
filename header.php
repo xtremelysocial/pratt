@@ -74,8 +74,10 @@
 
 	</header><!-- #masthead -->
 
-	<?php // Page bottom (before footer) widget area 
+	<?php // Page Top (after header) widget area 
+/*
 	get_sidebar( 'pagetop' ); 
+*/
 	?>
 
 	<?php // Set up the content area (but don't put it in a container) ?>	

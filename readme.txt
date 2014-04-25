@@ -3,9 +3,9 @@
 Contributors: timnicholson
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE
-Requires at least: 3.7.0
+Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 1.0.2
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -47,7 +47,7 @@ The theme was inspired by the "Pratt" theme by Blacktie.co. They deserve all the
 
 = Setting up the Home Page =
 
-We think this theme looks great with the home page as a full-width page with midnight blue "section header" that has a screenshot or picture of your product, service, or latest work at the top and a few recent posts at the bottom. So we have provided a sample home page that you can import into your theme. Use the standard WordPress Import feature and load the /samples/samples.xml file. You can use this sample to build your home page (or any other page on your site).
+We think this theme looks great with the home page as a full-width page with midnight blue "section header" that has a screenshot or picture of your product, service, or latest work at the top. So we have provided a sample home page that you can import into your theme. Use the standard WordPress Import feature and load the /samples/samples.xml file. You can use this sample to build your home page (or any other page on your site).
 
 If you want this page to be your home page, create or edit an existing page to be used for your blog. You don't need any content or special settings on that page as its just a placeholder URL for WordPress to display your blog. Then go into WordPress Appearance -> Customize and set the option for Static Home Page to one of your pages. Assign this page as your blog page.
 
@@ -95,6 +95,12 @@ For more information, see the "How to use our themes" [http://xtremelysocial.com
 
 
 == CHANGELOG ==
+
+= 1.1 =
+* Final updates for inclusion in the WordPress.org Theme Directory
+* Allows user to change the background image and/or background color and it now applies to the page itself, not just outside the page borders
+* Leaves images on pages that aren't full width alone so they display as normal images rather than being stretched full width
+
 = 1.0.2 =
 * Additional updates for inclusion in the WordPress.org Theme Directory
 

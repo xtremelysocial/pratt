@@ -1,20 +1,20 @@
-=== Flat Bootstrap Pratt by XtremelySocial ===
+=== Pratt by XtremelySocial ===
 
 Contributors: timnicholson
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
-Flat Bootstrap Pratt by XtremelySocial is an adaptation of the "Pratt" theme by Blacktie.co. It is a modern, fully responsive, "flat" style theme with a nice color palette, big full-width images, and full-width colored sections. The navbar is fixed at the top of the page for easy navigation. It includes several beautiful header images for businesses, photographers, musicians, writers and you can upload your own as well. For more information go to http://xtremelysocial.com/wordpress/pratt/.
+Pratt by XtremelySocial is an adaptation of the "Pratt" theme by Blacktie.co. It is a modern, fully responsive, "flat" style theme with a nice color palette, big full-width images, and full-width colored sections. The navbar is fixed at the top of the page for easy navigation. It includes several beautiful header images for businesses, photographers, musicians, writers and you can upload your own as well. For more information go to http://xtremelysocial.com/wordpress/pratt/.
 
 
 == DESCRIPTION ==
 
-The Flat Bootstrap Pratt theme is a child theme for Flat Bootstrap that fixes the navbar to the top of the page and includes your site title. The theme comes with several beautiful full-width header images and you can also upload your own. 
+The Pratt theme is a child theme for Flat Bootstrap that fixes the navbar to the top of the page and includes your site title. The theme comes with several beautiful full-width header images and you can also upload your own. 
 
 The theme is great for business sites, showcasing products, portfolios, or photos. The included header images are designed for businesses, photographers, musicians, and writers / bloggers.
 
@@ -27,8 +27,8 @@ For more information go to [http://xtremelysocial.com/wordpress/pratt/].
 
 == LICENSE ==
 
-Flat Bootstrap Pratt WordPress theme, Copyright (C) 2014 XtremelySocial
-Flat Bootstrap Pratt WordPress theme is licensed under the GPL.
+Pratt WordPress theme, Copyright (C) 2014 XtremelySocial
+Pratt WordPress theme is licensed under the GPL.
 
 The included header photos are all Public Domain and we are releasing them as GPL along with the theme. They are all from unsplash.com [http://unsplash.com].
 
@@ -95,6 +95,11 @@ For more information, see the "How to use our themes" [http://xtremelysocial.com
 
 
 == CHANGELOG ==
+
+= 1.2 =
+* Change name to Pratt from Flat Bootstrap Pratt per WordPress.org recommendation
+* Remove features from this child theme that are now incorporated into the parent theme, Flat Bootstrap
+* Updated content header to better determine what image and text to display
 
 = 1.1 =
 * Final updates for inclusion in the WordPress.org Theme Directory

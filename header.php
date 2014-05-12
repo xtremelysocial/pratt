@@ -1,12 +1,12 @@
 <?php
 /**
- * Theme: Flat Bootstrap Pratt
+ * Theme: Pratt
  * 
  * The Header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package flat-bootstrap-pratt
+ * @package pratt
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

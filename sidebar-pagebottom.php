@@ -1,12 +1,12 @@
 <?php
 /**
- * Theme: Flat Bootstrap
+ * Theme: Pratt
  * 
  * The "sidebar" for the bottom of the page (before the widgetized footer area). If no 
  * widgets added AND preivewing the theme, then display some widgets as samples. Once the
  * theme is actually in use, it will be empty until the user adds some actual widgets.
  *
- * @package flat-bootstrap
+ * @package pratt
  */
 ?>
 

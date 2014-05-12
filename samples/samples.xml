@@ -26,16 +26,16 @@
 >
 
 <channel>
-	<title>Flat Bootstrap Pratt Samples</title>
-	<link>http://xtremelysocial.com/wordpress/pratt</link>
-	<description>Just a sample home page for Pratt</description>
+	<title>XtremelySocial</title>
+	<link>http://xtremelysocial.com</link>
+	<description>Facebook applications and WordPress themes</description>
 	<pubDate>Tue, 15 Apr 2014 12:21:40 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://xtremelysocial.com/</wp:base_site_url>
 	<wp:base_blog_url>http://xtremelysocial.com/</wp:base_blog_url>
 
-	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>timnicholson</wp:author_login><wp:author_email>webmaster@xtremelysocial.com</wp:author_email><wp:author_display_name><![CDATA[Tim Nicholson]]></wp:author_display_name><wp:author_first_name><![CDATA[Tim]]></wp:author_first_name><wp:author_last_name><![CDATA[Nicholson]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>9</wp:author_id><wp:author_login>timnicholson</wp:author_login><wp:author_email>webmaster@xtremelysocial.com</wp:author_email><wp:author_display_name><![CDATA[Tim Nicholson]]></wp:author_display_name><wp:author_first_name><![CDATA[Tim]]></wp:author_first_name><wp:author_last_name><![CDATA[Nicholson]]></wp:author_last_name></wp:author>
 
 
 	<generator>http://wordpress.org/?v=3.8.3</generator>

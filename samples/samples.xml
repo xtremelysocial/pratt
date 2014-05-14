@@ -40,189 +40,546 @@
 
 	<generator>http://wordpress.org/?v=3.8.3</generator>
 	<item>
-				<title>Pratt Theme Sample Page</title>
-		<link>http://xtremelysocial.com/test/test-page/test-pratt/</link>
-		<pubDate>Wed, 16 Apr 2014 19:03:27 +0000</pubDate>
+				<title>Pratt Sample Image</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/app-bg/#main</link>
+		<pubDate>Wed, 14 May 2014 13:49:11 +0000</pubDate>
 		<dc:creator><![CDATA[timnicholson]]></dc:creator>
-		<guid isPermaLink="false">http://xtremelysocial.com/?page_id=1</guid>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/app-bg.png</guid>
 		<description></description>
-		<content:encoded><![CDATA[<section id="home" name="home"></section>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5086</wp:post_id>
+		<wp:post_date>2014-05-14 08:49:11</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:49:11</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>app-bg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/app-bg.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/app-bg.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:898;s:6:"height";i:544;s:4:"file";s:18:"2014/04/app-bg.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"app-bg-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:18:"app-bg-594x360.png";s:5:"width";i:594;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:14:"post-thumbnail";a:4:{s:4:"file";s:18:"app-bg-640x360.png";s:5:"width";i:640;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:18:"app-bg-120x120.png";s:5:"width";i:120;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>Comment</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/intro01/#main</link>
+		<pubDate>Wed, 14 May 2014 13:49:59 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/intro01.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5087</wp:post_id>
+		<wp:post_date>2014-05-14 08:49:59</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:49:59</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>intro01</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/intro01.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/intro01.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:141;s:6:"height";i:128;s:4:"file";s:19:"2014/04/intro01.png";s:5:"sizes";a:1:{s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:19:"intro01-120x120.png";s:5:"width";i:120;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>Date</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/intro02/#main</link>
+		<pubDate>Wed, 14 May 2014 13:50:28 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/intro02.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5088</wp:post_id>
+		<wp:post_date>2014-05-14 08:50:28</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:50:28</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>intro02</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/intro02.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:113;s:6:"height";i:128;s:4:"file";s:19:"2014/04/intro02.png";s:5:"sizes";a:1:{s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:19:"intro02-113x120.png";s:5:"width";i:113;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/intro02.png]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>Monitor</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/intro03/#main</link>
+		<pubDate>Wed, 14 May 2014 13:50:49 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/intro03.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5089</wp:post_id>
+		<wp:post_date>2014-05-14 08:50:49</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:50:49</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>intro03</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/intro03.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:154;s:6:"height";i:128;s:4:"file";s:19:"2014/04/intro03.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:19:"intro03-150x128.png";s:5:"width";i:150;s:6:"height";i:128;s:9:"mime-type";s:9:"image/png";}s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:19:"intro03-120x120.png";s:5:"width";i:120;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/intro03.png]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>iPhone</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/mobile/#main</link>
+		<pubDate>Wed, 14 May 2014 13:51:22 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/mobile.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5090</wp:post_id>
+		<wp:post_date>2014-05-14 08:51:22</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:51:22</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>mobile</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/mobile.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/mobile.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:340;s:6:"height";i:662;s:4:"file";s:18:"2014/04/mobile.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"mobile-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:18:"mobile-184x360.png";s:5:"width";i:184;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:14:"post-thumbnail";a:4:{s:4:"file";s:18:"mobile-340x360.png";s:5:"width";i:340;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:18:"mobile-120x120.png";s:5:"width";i:120;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>Sample Screenshot 1</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/item-01/#main</link>
+		<pubDate>Wed, 14 May 2014 13:52:09 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/item-01.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5091</wp:post_id>
+		<wp:post_date>2014-05-14 08:52:09</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:52:09</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>item-01</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/item-01.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/item-01.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:900;s:6:"height";i:517;s:4:"file";s:19:"2014/04/item-01.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:4:{s:4:"file";s:19:"item-01-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:19:"item-01-626x360.png";s:5:"width";i:626;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:14:"post-thumbnail";a:4:{s:4:"file";s:19:"item-01-640x360.png";s:5:"width";i:640;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:19:"item-01-120x120.png";s:5:"width";i:120;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>Sample Screenshot 2</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/item-02/#main</link>
+		<pubDate>Wed, 14 May 2014 13:52:49 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/wp-content/uploads/2014/04/item-02.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5092</wp:post_id>
+		<wp:post_date>2014-05-14 08:52:49</wp:post_date>
+		<wp:post_date_gmt>2014-05-14 13:52:49</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>item-02</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>5029</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://xtremelysocial.com/wp-content/uploads/2014/04/item-02.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2014/04/item-02.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:900;s:6:"height";i:517;s:4:"file";s:19:"2014/04/item-02.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:4:{s:4:"file";s:19:"item-02-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:19:"item-02-626x360.png";s:5:"width";i:626;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:14:"post-thumbnail";a:4:{s:4:"file";s:19:"item-02-640x360.png";s:5:"width";i:640;s:6:"height";i:360;s:9:"mime-type";s:9:"image/png";}s:15:"yarpp-thumbnail";a:4:{s:4:"file";s:19:"item-02-120x120.png";s:5:"width";i:120;s:6:"height";i:120;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+				<title>Product Page from Pratt Theme</title>
+		<link>http://xtremelysocial.com/wordpress/samples/pratt-sample/</link>
+		<pubDate>Tue, 22 Apr 2014 19:22:25 +0000</pubDate>
+		<dc:creator><![CDATA[timnicholson]]></dc:creator>
+		<guid isPermaLink="false">http://xtremelysocial.com/?page_id=5029</guid>
+		<description></description>
+		<content:encoded><![CDATA[<section id="home"></section>
 
 <div id="screenshot" class="section-featured midnightblue">
+
 <div class="container">
+
 <div class="row">
+
 <div class="col-md-12 centered">
+
 <h1>Welcome To <b>Pratt</b></h1>
+
 <h2>Show your product with this handsome theme.</h2>
-<p>
+
 </div>
 
 <div class="col-md-2">
+
 <h4>Amazing Results</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-<p><img class="hidden-xs hidden-sm hidden-md" src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/arrow1.png" width="114" height="123">
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+<img class="hidden-xs hidden-sm hidden-md" src="http://xtremelysocial.com/wp-content/uploads/samples/pratt/arrow1.png" alt="" width="114" height="123" />
+
+
+
 </div>
 
 <div class="col-md-8">
-<img class="img-responsive" src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/app-bg.png" alt="" width="898" height="544">
-</div>
+
+<img src="http://xtremelysocial.com/wp-content/uploads/2014/04/app-bg.png" alt="Pratt Sample Image" width="898" height="544" class="aligncenter size-full wp-image-5086" /></div>
+
+
 
 <div class="col-md-2">
-<br />
-<img class="hidden-xs hidden-sm hidden-md" src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/arrow2.png" width="114" height="123"></p>
+
+<img class="hidden-xs hidden-sm hidden-md" src="http://xtremelysocial.com/wp-content/uploads/samples/pratt/arrow2.png" alt="" width="114" height="123" />
+
 <h4>Awesome Design</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-</div>
-</div>
-</div>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+
+
 </div>
 
-<section id="desc" name="desc"></section>
+</div>
+
+</div>
+
+</div>
+
+<section id="desc"></section>
+
 <div id="intro" class="section">
+
 <div class="container">
+
 <div class="row centered">
+
 <h1>Designed To Excel</h1>
 
-<div class="col-sm-4">
-<img src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/intro01.png" alt="" class="aligncenter" width="141" height="128"></p>
+<div class="col-sm-4"><img src="http://xtremelysocial.com/wp-content/uploads/2014/04/intro01.png" alt="Comment" width="141" height="128" class="aligncenter size-full wp-image-5087" />
+
 <h3>Community</h3>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+
+
 </div>
 
-<div class="col-sm-4">
-<img src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/intro02.png" alt="" class="aligncenter" width="113" height="128"></p>
+<div class="col-sm-4"><img src="http://xtremelysocial.com/wp-content/uploads/2014/04/intro02.png" alt="Date" width="113" height="128" class="aligncenter size-full wp-image-5088" />
+
 <h3>Schedule</h3>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+
+
 </div>
 
-<div class="col-sm-4">
-<img src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/intro03.png" alt="" class="aligncenter" width="154" height="128"></p>
+<div class="col-sm-4"><img src="http://xtremelysocial.com/wp-content/uploads/2014/04/intro03.png" alt="Monitor" width="154" height="128" class="aligncenter size-full wp-image-5089" />
+
 <h3>Monitoring</h3>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+
+
 </div>
+
 </div>
+
+
+
 <hr />
+
+
+
 </div>
+
 </div>
 
 <div id="features" class="padding-bottom">
+
 <div class="container">
+
 <div class="row">
+
 <h1 class="centered">What's New?</h1>
 
-<div class="col-sm-6 centered">
-<img class="aligncenter" src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/mobile.png" alt="" width="340" height="662">
-</div>
+<div class="col-sm-6 centered"><img src="http://xtremelysocial.com/wp-content/uploads/2014/04/mobile.png" alt="iPhone" width="340" height="662" class="aligncenter size-full wp-image-5090" /></div>
 
 <div class="col-sm-6">
+
 <h3>Some Features</h3>
-<div class="accordion ac" id="accordion2">
+
+<div id="accordion2" class="accordion ac">
+
 <div class="accordion-group">
-<div class="accordion-heading">
-<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"><br />
-First Class Design +<br />
-</a>
-</div>
+
+<div class="accordion-heading"><a class="accordion-toggle" href="#collapseOne" data-toggle="collapse" data-parent="#accordion2">
+
+
+
+First Class Design +
+
+
+
+</a></div>
 
 <div id="collapseOne" class="accordion-body collapse in">
+
 <div class="accordion-inner">
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
 </div>
+
 </div>
+
 </div>
 
 <div class="accordion-group">
-<div class="accordion-heading">
-<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"><br />
-Retina Ready Theme +<br />
-</a>
-</div>
+
+<div class="accordion-heading"><a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion2">
+
+
+
+Retina Ready Theme +
+
+
+
+</a></div>
 
 <div id="collapseTwo" class="accordion-body collapse">
+
 <div class="accordion-inner">
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
 </div>
+
 </div>
+
 </div>
 
 <div class="accordion-group">
-<div class="accordion-heading">
-<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"><br />
-Awesome Support +<br />
-</a>
-</div>
+
+<div class="accordion-heading"><a class="accordion-toggle" href="#collapseThree" data-toggle="collapse" data-parent="#accordion2">
+
+
+
+Awesome Support +
+
+
+
+</a></div>
 
 <div id="collapseThree" class="accordion-body collapse">
+
 <div class="accordion-inner">
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
 </div>
+
 </div>
+
 </div>
 
 <div class="accordion-group">
-<div class="accordion-heading">
-<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour"><br />
-Responsive Design +<br />
-</a>
-</div>
+
+<div class="accordion-heading"><a class="accordion-toggle" href="#collapseFour" data-toggle="collapse" data-parent="#accordion2">
+
+
+
+Responsive Design +
+
+
+
+</a></div>
 
 <div id="collapseFour" class="accordion-body collapse">
+
 <div class="accordion-inner">
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+
+
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
 </div>
 
-<section id="showcase" name="showcase"></section>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<section id="showcase"></section>
+
 <div id="showcase" class="section midnightblue">
-<div class="container centered">
-<h1 class="centered">Some Screenshots</h1>
-<div id="myCarousel" class="carousel slide" data-ride="carousel"></p>
-<div class="carousel-inner">
-<div class="item active">
-<center><img src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/item-01.png" alt="" width="900" height="517"></center>
-</div>
 
-<div class="item">
-<center><img src="http://xtremelysocial.com/test/wp-content/themes/flat-bootstrap-pratt/samples/img/item-02.png" alt="" width="900" height="517"></center>
-</div>
+<div class="container centered">
+
+<h1 class="centered">Some Screenshots</h1>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="item active"><center><img src="http://xtremelysocial.com/wp-content/uploads/2014/04/item-01.png" alt="Sample Screenshot 1" width="900" height="517" class="aligncenter size-full wp-image-5091" /></center></div>
+
+<div class="item"><center><img src="http://xtremelysocial.com/wp-content/uploads/2014/04/item-02.png" alt="Sample Screenshot 2" width="900" height="517" class="aligncenter size-full wp-image-5092" /></center></div>
+
 </div>
 
 <ol class="carousel-indicators">
-<li data-target="#myCarousel" data-slide-to="0" class="active">&nbsp;</li>
-<li data-target="#myCarousel" data-slide-to="1">&nbsp;</li>
+
+	<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+
+	<li data-target="#myCarousel" data-slide-to="1"></li>
+
 </ol>
 
-<p><a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">&nbsp;</span></a></p>
-<p><a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right">&nbsp;</span></a></p>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"> </span></a>
+
+
+
+<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"> </span></a>
+
+
+
 </div>
+
 </div>
+
 </div>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1</wp:post_id>
-		<wp:post_date>2014-04-16 19:10:27</wp:post_date>
-		<wp:post_date_gmt>2014-04-16 19:10:27</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
+		<wp:post_id>5029</wp:post_id>
+		<wp:post_date>2014-04-22 14:22:25</wp:post_date>
+		<wp:post_date_gmt>2014-04-22 19:22:25</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>pratt</wp:post_name>
+		<wp:post_name>pratt-sample</wp:post_name>
 		<wp:status>publish</wp:status>
-		<wp:post_parent></wp:post_parent>
+		<wp:post_parent>233</wp:post_parent>
 		<wp:menu_order>10</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>shareaholic_disable_recommendations</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>shareaholic_disable_share_buttons</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[9]]></wp:meta_value>
+		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[page-fullwidth-noheader.php]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_subtitle</wp:meta_key>
-			<wp:meta_value><![CDATA[Pratt Theme Sample Page]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Sample page content for the Flat Bootstrap Pratt WordPress theme]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[4979]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

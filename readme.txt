@@ -100,6 +100,7 @@ For more information, see the "How to use our themes" [http://xtremelysocial.com
 * Change name to Pratt from Flat Bootstrap Pratt per WordPress.org recommendation
 * Remove features from this child theme that are now incorporated into the parent theme, Flat Bootstrap
 * Updated content header to better determine what image and text to display
+* Added images to the samples.xml file so the user can choose to import them if desired
 
 = 1.1 =
 * Final updates for inclusion in the WordPress.org Theme Directory

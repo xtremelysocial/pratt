@@ -17,16 +17,34 @@ $sidebar_footer = get_dynamic_sidebar( 'Footer' );
 /* If not, then display sample widgets, unless turned off in theme options */
 global $theme_options;
 if ( $theme_options['sample_widgets'] != false AND ! $sidebar_footer ) {
-	$sidebar_footer = '<aside id="sample-text" class="widget widget_text col-sm-4 clearfix">'
+	$sidebar_footer = '<aside id="sample-text" class="widget widget_text col-sm-5 clearfix">'
 		.'<h2 class="widget-title">' . _x( 'Address', null, 'flat-bootstrap' ) . '</h2>'
 		.'<p>' . get_bloginfo( 'name' ) . '<br />'
 		._x( "Av. Greenville 987<br />New York, New York 90873<br />United States", null, 'flat-bootstrap' ) . '</p>'
 		.'<p>' . _x( "Note: This is just a sample footer. Add widgets to change what appears here.", null, 'flat-bootstrap' ) . '</p>'
 		.'</aside>';
 		
-	$sidebar_footer .= '<aside id="sample-text-2" class="widget widget_text col-sm-8 clearfix">'
+	$sidebar_footer .= '<aside id="sample-text-2" class="widget widget_text col-sm-7 clearfix">'
 		.'<h2 class="widget-title">' . _x( 'Drop Us A Line', null, 'flat-bootstrap' ) . '</h2>'
-		.'<p>' . do_shortcode( "[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]" ) . '</p>'
+		.'<p>' 
+		//. do_shortcode( "[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]" ) 
+		.'<form role="form" action="#" method="post" enctype="plain" class="contact-form"> 
+				  <div class="form-group">
+				    <label for="name1" class="name">' . _x( 'Your Name', null, 'flat-bootstrap' ) . '</label>
+				    <input type="text" name="Name" class="form-control name" id="name1" placeholder="'. _x( 'Your Name', null, 'flat-bootstrap' ) . '">
+				  </div>
+				  <div class="form-group">
+				    <label for="email1" class="email">'. _x( 'Email Address', null, 'flat-bootstrap' ) . '</label>
+				    <input type="email" name="Mail" class="form-control email" id="email1" placeholder="'. _x( 'Enter email', null, 'flat-bootstrap' ) . '">
+				  </div>
+				  <div class="form-group">
+				  	<label>' . _x( 'Your Text', null, 'flat-bootstrap' ) . '</label>
+				  	<textarea class="form-control" name="Message" rows="3"></textarea>
+				  </div>
+				  <br>
+				  <button type="submit" class="btn btn-large btn-primary">SUBMIT</button>
+				</form>'
+		. '</p>'
 		.'</aside>';
 }
 

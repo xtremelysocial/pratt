@@ -3,9 +3,9 @@
 Contributors: timnicholson
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE
-Requires at least: 3.7
-Tested up to: 3.9
-Stable tag: 1.2
+Requires at least: 3.8
+Tested up to: 4.0
+Stable tag: 1.3
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -95,6 +95,14 @@ For more information, see the "How to use our themes" [http://xtremelysocial.com
 
 
 == CHANGELOG ==
+
+= 1.3 =
+* Added $xsbf_theme_option to control displaying the custom header below the navbar. Removed content-header.php and header.php as those are no longer needed because the parent theme handles this now.
+* Added new custom header image of a desktop with briefcase
+* Added new custom header image of a city skyline
+* Changed sample comment form in footer to not require Jetpack. This was displaying as ugly shortcodes in theme preview.
+* Bumped version numbers.
+* Includes all the latest enhancements from the parent theme, such as support for portfolios and testimonials, new page templates, full-width embedded videos, expanded color palette, and much more.
 
 = 1.2 =
 * Change name to Pratt from Flat Bootstrap Pratt per WordPress.org recommendation

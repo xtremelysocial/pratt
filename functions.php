@@ -76,8 +76,9 @@ function xsbf_pratt_after_setup_theme() {
 
 	// These args will override the ones in the parent theme
 	$args = array(
-		'header-text' => false,
-		'default-image' => get_stylesheet_directory_uri() . '/images/headers/desk.jpg',
+		'header-text' => true, // allow user to set the header text color
+		'default-text-color' => '16a085', // should match css link color
+		'default-image' => get_stylesheet_directory_uri() . '/images/headers/city.jpg',
 		'width' => 1600,
 		'height' => 900
 	);
@@ -132,11 +133,102 @@ function xsbf_pratt_after_setup_theme() {
 			'description'   => __( 'Skyline', 'flat-bootstrap' )
 		),
 	) );
+
+/*	
+	// Override parent theme's theme.js with our own. We've added javascript to toggle
+	// displaying the search field in the top nav bar.
+	wp_dequeue_script( 'theme' );
+	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), '20140913', true );
+*/
 }
 
-/*
- * Set the CSS for the Appearance > Header admin panel 
+/**
+ * Styles the header image and text displayed on the blog
+ *
+ * This function handles BOTH previewing in the customizer as well as the actual display
+ * of the header in the front-end. This function ONLY needs to handle hiding or displaying
+ * the site title and custom header text color. All other styles are from the front-end 
+ * CSS.
+ *
+ * Since Pratt doesn't have a header above the top navbar, we need to reverse the behavoir
+ * of displaying the site title or not. i.e. Put it back to the "normal" way it was
+ * intended to work.
+ *
+ * @see xsbf_custom_header_setup().
  */
+function xsbf_header_style() {
+
+	// get_header_textcolor() returns 'blank' if hiding site title and tagline or returns
+	// any hex color value. HEADER_TEXTCOLOR is always the default color.
+	$header_text_color = get_header_textcolor();
+
+	// If no custom options for text are set, let's bail
+	if ( HEADER_TEXTCOLOR == $header_text_color AND ! display_header_text() ) {
+	//if ( HEADER_TEXTCOLOR == $header_text_color ) {
+		return;
+	}
+
+	// If we get this far, we have custom styles. Let's do this.
+	?>
+	<style type="text/css" id="custom-header-css">
+	<?php
+		// Has the text been hidden?
+		if ( 'blank' == $header_text_color ) :
+	?>
+		.navbar-brand {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	<?php
+		// If the user has set a custom color for the text use that
+		elseif ( HEADER_TEXTCOLOR != $header_text_color ) :
+	?>
+		.navbar-default .navbar-brand {
+			color: #<?php echo $header_text_color; ?>;
+		}
+		.navbar-default .navbar-brand:hover,
+		.navbar-default .navbar-brand:active,
+		.navbar-default .navbar-brand:focus {
+			color: #<?php echo $header_text_color; ?>;
+			opacity: 0.75;
+		}
+		/* This isn't ready to go into "production" yet. Still testing. */
+		/*
+		a,
+		i {
+			color: #<?php echo $header_text_color; ?>;
+		}
+		a:hover,
+		a:active,
+		a:focus {
+			color: #<?php echo $header_text_color; ?>;
+			opacity: 0.75;
+		}
+		*/
+		/* End testing. */
+	<?php endif; ?>
+
+	<?php if ( display_header_text() ) : ?>
+		.navbar-brand {
+			position: relative;
+			clip: auto;
+		}
+	<?php endif; ?>
+	</style>
+	<?php
+}
+
+/**
+ * Styles the header image displayed on the Appearance > Header admin panel.
+ *
+ * This function is NOT used by the Customizer, just the stand-alone header upload screen.
+ * Since the front-end CSS is not loaded in Admin, all the heading styles need to be 
+ * inlined here to match the front-end CSS, including the image, h1, and h2 styles. This
+ * function does NOT need to handle hiding or displaying text as that is handled by core
+ * WordPress.
+ *
+ * @see xsbf_custom_header_setup().
+ */ 
 function xsbf_admin_header_style() {
 	$header_image = get_header_image();
 ?>
@@ -188,7 +280,6 @@ function xsbf_admin_header_style() {
 		font: 300 24px/26px Raleway, Arial, 'Helvetica Neue', sans-serif;
 		margin: 10px 0 25px;
 		text-align: center;
-		/*text-shadow: none;*/
 	}
 
 	<?php // If text color not overriden, use white (assume dark background) ?>
@@ -208,9 +299,16 @@ function xsbf_admin_header_style() {
 <?php
 }
 
-/* 
- * Display the header image in the Appearance > Header and Appearance > Customize
- */
+/**
+ * Output markup to be displayed on the Appearance > Header admin panel.
+ *
+ * This callback overrides the default markup displayed there.
+ *
+ * This needs to output the HTML that ties to the inline CSS above to style the custom
+ * header image, site title, and tagline.
+ *
+ * @return void
+ */ 
 function xsbf_admin_header_image() {
 	?>
 	<!-- <div id="headimg" style="background: #34495e url(<?php header_image(); ?>) no-repeat scroll top; background-size: 1600px auto; background-position: center center;"> -->
@@ -224,4 +322,4 @@ function xsbf_admin_header_image() {
 	<div>
 	</div>
 <?php 
-} 
+}

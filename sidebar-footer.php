@@ -12,7 +12,8 @@
 
 <?php 
 /* If footer "sidebar" has widgets, then retreive them */
-$sidebar_footer = get_dynamic_sidebar( 'Footer' );
+//$sidebar_footer = get_dynamic_sidebar( 'Footer' );
+$sidebar_footer = get_dynamic_sidebar( 'sidebar-2' );
 
 /* If not, then display sample widgets, unless turned off in theme options */
 global $theme_options;

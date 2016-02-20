@@ -2,10 +2,10 @@
 
 Contributors: timnicholson
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE
-Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 1.3
+Donate link: [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE]
+Requires at least: 4.2
+Tested up to: 4.4.3
+Stable tag: 1.4
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -69,7 +69,7 @@ The original Pratt HTML theme by Blacktie.co has a two-column footer with your o
 
 Add a normal WordPress text widget to the Footer sidebar and key in your company name and address or whatever you like.
 
-To duplicate the contact form, add a second text widget to the Footer sidebar and paste in the following. This is a standard WordPress contact form that will send the email contents to the "Feedback" section in Admin and also email it to you.
+To duplicate the contact form, you must enable the Jetpack Feedback module. Add a second text widget to the Footer sidebar and paste in the following. This is a standard WordPress contact form that will send the email contents to the "Feedback" section in Admin and also email it to you.
 
 `[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Website' type='url'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]`
 
@@ -95,6 +95,12 @@ For more information, see the "How to use our themes" [http://xtremelysocial.com
 
 
 == CHANGELOG ==
+
+= 1.4 =
+* Added the ability to turn off displaying the site title in the top nav bar.
+* Added the ability to change the color of the site title in the top nav bar.
+* Changed the default header background to the city view as that is the one that is in the theme's screenshot.
+* Updated the calls to the various sidebars to use the sidebar ID instead of the name to avoid issues with language translations that change the name.
 
 = 1.3 =
 * Added $xsbf_theme_option to control displaying the custom header below the navbar. Removed content-header.php and header.php as those are no longer needed because the parent theme handles this now.

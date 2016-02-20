@@ -12,7 +12,8 @@
 
 <?php 
 /* If page bottom "sidebar" has widgets, then retrieve them */
-$sidebar_pagebottom = get_dynamic_sidebar( 'Page Bottom' );
+//$sidebar_pagebottom = get_dynamic_sidebar( 'Page Bottom' );
+$sidebar_pagebottom = get_dynamic_sidebar( 'sidebar-4' );
 
 /* If not, then display sample widgets unless turned off in theme options */
 global $theme_options;

@@ -3,9 +3,9 @@
 Contributors: timnicholson
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 Donate link: [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JGJUJVK99KHRE]
-Requires at least: 4.2
-Tested up to: 4.4.3
-Stable tag: 1.4
+Requires at least: 4.3
+Tested up to: 4.5
+Stable tag: 1.5
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -95,6 +95,18 @@ For more information, see the "How to use our themes" [http://xtremelysocial.com
 
 
 == CHANGELOG ==
+
+= 1.5 =
+* Updated sidebar-footer.php and sidebar-pagebottom.php to always fire the sidebar filters even if there are no widgets added by the user. That way they an be overridden by plugins if desired.
+* Load parent theme's (Flat Bootstrap) style.css using PHP instead of CSS inline @include. This improves performance of the theme.
+* Enhanced the custom site title color to work even if someone overrides the top navbar from navbar-default (light background) to navbar-inverse (dark background).
+* Removed reference to Blacktie.co from the site credits that automatically display at the bottom of the theme. They are still credited in this readme.txt file of course.
+* Updated the comments in functions.php to reflect the new option for custom header location (not used by this theme).
+* We now completely override the parent theme's xsbf_custom_header_setup() because when v2.0 of Flat Bootstrap is released, it will have its own custom headers. 
+* Remove theme support for custom logo (for now) in preparation for Flat Bootstrap v2.0.
+* Add post-thumbnail-default.png to /images folder in preparation for Flat Bootstrap v2.0.
+* Updated theme screenshot to the new "2x" WordPress format (1200x900px).
+* Rearranged the style.css and added a table of contents to it.
 
 = 1.4 =
 * Added the ability to turn off displaying the site title in the top nav bar.

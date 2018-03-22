@@ -36,7 +36,8 @@
  *
  * custom_header_location - If 'header', displays the custom header above the navbar. If
  * 		'content-header', displays it below the navbar in place of the colored content-
- *		header section.
+ *		header section. If 'both' (or anything else), it will display the header text but
+ *		also display the custom header below the navbar.
  *
  * image_keyboard_nav - Whether to load javascript for using the keyboard to navigate
  		image attachment pages
@@ -68,21 +69,42 @@ $xsbf_theme_options = array(
 	//'testimonials'				=> true // requires Jetpack 
 );
 
+/* 
+ * Load the parent theme's stylesheet here for performance reasons instead of using 
+ * @include in this theme's stylesheet. Load this after the parent theme's styles.
+ */
+//add_action( 'wp_enqueue_scripts', 'xsbf_pratt_enqueue_styles', 20 );
+add_action( 'wp_enqueue_scripts', 'xsbf_pratt_enqueue_styles' );
+function xsbf_pratt_enqueue_styles() {
+	wp_enqueue_style( 'flat-bootstrap', 
+		get_template_directory_uri() . '/style.css',
+		array ( 'bootstrap', 'theme-base', 'theme-flat')
+	);
+
+	wp_enqueue_style( 'pratt', 
+		get_stylesheet_directory_uri() . '/style.css', 
+		array('flat-bootstrap') 
+	);
+}
+
 /**
  * Force the site title to display in the navbar and add our custom header images
  */
-add_action( 'after_setup_theme', 'xsbf_pratt_after_setup_theme' ); 
-function xsbf_pratt_after_setup_theme() {
+/*add_action( 'after_setup_theme', 'xsbf_pratt_after_setup_theme' ); 
+function xsbf_pratt_after_setup_theme() {*/
+add_action( 'after_setup_theme', 'xsbf_custom_header_setup' ); 
+function xsbf_custom_header_setup() {
 
-	// These args will override the ones in the parent theme
-	$args = array(
-		'header-text' => true, // allow user to set the header text color
-		'default-text-color' => '16a085', // should match css link color
-		'default-image' => get_stylesheet_directory_uri() . '/images/headers/city.jpg',
-		'width' => 1600,
-		'height' => 900
-	);
-	add_theme_support( 'custom-header', $args );
+	add_theme_support( 'custom-header', apply_filters( 'xsbf_custom_header_args', array(
+		'header-text' 			=> true, // allow user to set the header text color
+		'default-text-color' 	=> '16a085', // should match css link color
+		'default-image' 		=> get_stylesheet_directory_uri() . '/images/headers/city.jpg',
+		'width' 				=> 1600,
+		'height' 				=> 700, //large: home 700, other 400; mobile home 480, other 340 mobile; images are 900
+		'flex-width'             => true,
+		'flex-height'            => true,
+		'wp-head-callback'       => 'xsbf_header_style'
+	) ) );
 
 	//The %2$s references the child theme directory (ie the stylesheet directory), use 
 	// %s to reference the parent directory.
@@ -134,12 +156,6 @@ function xsbf_pratt_after_setup_theme() {
 		),
 	) );
 
-/*	
-	// Override parent theme's theme.js with our own. We've added javascript to toggle
-	// displaying the search field in the top nav bar.
-	wp_dequeue_script( 'theme' );
-	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'), '20140913', true );
-*/
 }
 
 /**
@@ -183,12 +199,16 @@ function xsbf_header_style() {
 		// If the user has set a custom color for the text use that
 		elseif ( HEADER_TEXTCOLOR != $header_text_color ) :
 	?>
-		.navbar-default .navbar-brand {
+		.navbar-default .navbar-brand,
+		.navbar-inverse .navbar-brand {
 			color: #<?php echo $header_text_color; ?>;
 		}
 		.navbar-default .navbar-brand:hover,
 		.navbar-default .navbar-brand:active,
-		.navbar-default .navbar-brand:focus {
+		.navbar-default .navbar-brand:focus,
+		.navbar-inverse .navbar-brand:hover,
+		.navbar-inverse .navbar-brand:active,
+		.navbar-inverse .navbar-brand:focus {
 			color: #<?php echo $header_text_color; ?>;
 			opacity: 0.75;
 		}
@@ -216,110 +236,4 @@ function xsbf_header_style() {
 	<?php endif; ?>
 	</style>
 	<?php
-}
-
-/**
- * Styles the header image displayed on the Appearance > Header admin panel.
- *
- * This function is NOT used by the Customizer, just the stand-alone header upload screen.
- * Since the front-end CSS is not loaded in Admin, all the heading styles need to be 
- * inlined here to match the front-end CSS, including the image, h1, and h2 styles. This
- * function does NOT need to handle hiding or displaying text as that is handled by core
- * WordPress.
- *
- * @see xsbf_custom_header_setup().
- */ 
-function xsbf_admin_header_style() {
-	$header_image = get_header_image();
-?>
-	<style type="text/css" id="xsbf-admin-header-css">
-
-	.appearance_page_custom-header #headimg {
-		border: none;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing:    border-box;
-		box-sizing:         border-box;
-		<?php
-		if ( ! empty( $header_image ) ) {
-			echo 'background: url(' . esc_url( $header_image ) . ') no-repeat scroll center center; background-size: 1600px auto; background-position: center center;';
-			echo 'height: 480px;';
-		} else {
-			echo 'height: 200px;';
-		}
-		?>
-		padding: 0 40px;
-	}
-	#headimg .home-link {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing:    border-box;
-		box-sizing:         border-box;
-		margin: 0 auto;
-		max-width: 1040px;
-		<?php
-		if ( ! empty( $header_image ) ) {
-			echo 'height: 480px;';
-		} else {
-			echo 'height: 200px;';
-		}
-		?>
-		width: 100%;
-	}
-
-	#headimg h1 {
-		font: 700 41px/45px Raleway, Arial, 'Helvetica Neue', sans-serif;
-		<?php
-		if ( ! empty( $header_image ) ) {
-			echo 'margin: 200px 0 11px;';
-		} else {
-			echo 'margin: 50px 0 11px;';
-		}
-		?>
-		text-align: center;
-	}
-	#headimg h2 {
-		font: 300 24px/26px Raleway, Arial, 'Helvetica Neue', sans-serif;
-		margin: 10px 0 25px;
-		text-align: center;
-	}
-
-	<?php // If text color not overriden, use white (assume dark background) ?>
-	<?php if ( HEADER_TEXTCOLOR == get_header_textcolor() ) : ?>
-	#headimg h1, #headimg h2 {
-		color: white !important;
-	}
-
-	<?php // Otherwise, set the text color to what the user selected ?>
-	<?php else : ?>
-	#headimg h1, #headimg h2 {
-		color: <?php get_header_textcolor(); ?> !important;
-	}	
-	<?php endif; ?>
-
-	</style>
-<?php
-}
-
-/**
- * Output markup to be displayed on the Appearance > Header admin panel.
- *
- * This callback overrides the default markup displayed there.
- *
- * This needs to output the HTML that ties to the inline CSS above to style the custom
- * header image, site title, and tagline.
- *
- * @return void
- */ 
-function xsbf_admin_header_image() {
-	?>
-	<!-- <div id="headimg" style="background: #34495e url(<?php header_image(); ?>) no-repeat scroll top; background-size: 1600px auto; background-position: center center;"> -->
-	<div id="headimg" style="background: url(<?php header_image(); ?>) no-repeat scroll top; background-size: 1600px auto; background-position: center center;">
-	<div class="section-image-overlay">
-		<?php $style = ' style="color:#' . get_header_textcolor() . ';"'; ?>
-		<div class="home-link">
-			<h1 class="displaying-header-text" <?php echo $style; ?>><?php bloginfo('name'); ?></h1>
-			<h2 id="desc" class="displaying-header-text"<?php echo $style; ?>><?php bloginfo('description'); ?></h2>
-		</div>
-	<div>
-	</div>
-<?php 
-}
+} //endfunction xsbf_header_style

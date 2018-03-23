@@ -14,10 +14,11 @@
 /* If page bottom "sidebar" has widgets, then retrieve them */
 //$sidebar_pagebottom = get_dynamic_sidebar( 'Page Bottom' );
 $sidebar_pagebottom = get_dynamic_sidebar( 'sidebar-4' );
+$sidebar_pagebottom = apply_filters( 'xsbf_pagebottom', $sidebar_pagebottom );
 
 /* If not, then display sample widgets unless turned off in theme options */
-global $theme_options;
-if ( $theme_options['sample_widgets'] != false AND ! $sidebar_pagebottom ) {
+global $xsbf_theme_options;
+if ( $xsbf_theme_options['sample_widgets'] != false AND ! $sidebar_pagebottom ) {
 	$sidebar_pagebottom = '<aside id="sample-text" class="widget widget_text section bg-midnightblue centered clearfix">'
 		.'<div class="container">'
 		.'<h2 class="widget-title">' . _x( 'THIS IS A CALL TO ACTION AREA', null, 'flat-bootstrap' ) . '</h2>'
@@ -37,6 +38,6 @@ if ( $theme_options['sample_widgets'] != false AND ! $sidebar_pagebottom ) {
 if ( $sidebar_pagebottom ) :
 ?>
 	<div id="sidebar-pagebottom" class="sidebar-pagebottom">
-		<?php echo apply_filters( 'xsbf_pagebottom', $sidebar_pagebottom ); ?>
+		<?php echo $sidebar_pagebottom; ?>
 	</div><!-- .sidebar-pagebottom -->
 <?php endif;?>

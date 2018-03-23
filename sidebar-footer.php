@@ -14,10 +14,12 @@
 /* If footer "sidebar" has widgets, then retreive them */
 //$sidebar_footer = get_dynamic_sidebar( 'Footer' );
 $sidebar_footer = get_dynamic_sidebar( 'sidebar-2' );
+$sidebar_footer = apply_filters( 'xsbf_footer', $sidebar_footer );
 
 /* If not, then display sample widgets, unless turned off in theme options */
-global $theme_options;
-if ( $theme_options['sample_widgets'] != false AND ! $sidebar_footer ) {
+global $xsbf_theme_options;
+//echo 'xsbf_theme_options=' . print_r( $xsbf_theme_options ); //TEST
+if ( $xsbf_theme_options['sample_widgets'] != false AND ! $sidebar_footer ) {
 	$sidebar_footer = '<aside id="sample-text" class="widget widget_text col-sm-5 clearfix">'
 		.'<h2 class="widget-title">' . _x( 'Address', null, 'flat-bootstrap' ) . '</h2>'
 		.'<p>' . get_bloginfo( 'name' ) . '<br />'
@@ -55,7 +57,8 @@ if ( $sidebar_footer ) :
 	<div class="sidebar-footer clearfix">
 	<div class="container">
 		<div class="row">
-		<?php echo apply_filters( 'xsbf_footer', $sidebar_footer ); ?>
+		<?php //echo apply_filters( 'xsbf_footer', $sidebar_footer ); ?>
+		<?php echo $sidebar_footer; ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
 	</div><!-- .sidebar-footer -->
